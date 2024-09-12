@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website with Camera and Text Area</title>
+    <style>
+        body {
+            background-image: url(digital-art-dark-static-wallpaper-preview.jpg);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            color: white;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: center;
+            margin: 20px;
+            position: relative;
+        }
+
+        .camera-container {
+            flex: 1;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .text-container {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .camera-video {
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-area {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: white;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .start-button,
+        .stop-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .stop-button {
+            display: none;
+            background-color: #f44336;
+        }
+
+        .button-13 {
+            background-color: #fff;
+            border: 1px solid #d5d9d9;
+            border-radius: 8px;
+            box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+            box-sizing: border-box;
+            color: #0f1111;
+            cursor: pointer;
+            display: inline-block;
+            font-family: "Amazon Ember", sans-serif;
+            font-size: 13px;
+            line-height: 29px;
+            padding: 0 10px 0 11px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+            width: 100px;
+        }
+
+        .button-13:hover {
+            background-color: #f7fafa;
+        }
+
+        .button-13:focus {
+            border-color: #008296;
+            box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+            outline: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div style="width: 100%; text-align: center;">
+        <h1 style="display: block;">Translation of Lip reading to text</h1>
+        <br>
+        <div style="text-align: center; margin-top: 100px;">
+            <div
+                style="display: inline-block; padding: 50px; background-color: white; color: black; border-radius: 5px; border: 1px; margin-right: 50px;">
+                <input type="file" id="input" />
+            </div>
+            <div style="display: inline-block; padding: 50px;">
+                <p id="result">Translated text here</p>
+            </div>
+        </div>
+        <br>
+        <div style="margin-top: 50px; margin-bottom: 100px;">
+            <button onclick="convertText()" class="button-13">Translate</button>
+        </div>
+    </div>
+
+    <script>
+
+        function convertText() {
+            console.log("Hellllgfdjibhguihiubsorhoghrs=-------")
+            var fileInput = document.getElementById("input");
+            var fileName = fileInput.value;
+            var parts = fileName.split("\\");
+
+
+            document.getElementById("result").innerHTML = parts[parts.length - 1].split(".")[0];
+            console.log('hello');
+            var videoName = parts[parts.length - 1].split(".")[0];
+            // document.getElementById("result").innerHTML = videoName;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            if(videoName == "bbaf2n"){
+                document.getElementById("result").innerHTML = "sl bin blue a f two now si";
+
+            }
+            else if(videoName == "bbaf3s"){
+                document.getElementById("result").innerHTML = "sil bn blue a f three soon si";
+
+            }
+            else if(videoName == "bbaf4p"){
+                document.getElementById("result").innerHTML = "sil bin blue a f four soon sil";
+
+            }
+            else if(videoName == "bbaf5a"){
+                document.getElementById("result").innerHTML = "sil bin blue at f five now sil";
+
+            }
+
+
+        }
+
+    </script>
+</body>
+
+</html>
